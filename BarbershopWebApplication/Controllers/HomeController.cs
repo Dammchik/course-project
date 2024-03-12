@@ -20,8 +20,14 @@ namespace BarbershopWebApplication.Controllers
         }
         [HttpPost]
         public ViewResult RsvpForm(BarbershopRecordings barbershopRecordings) { 
-            Repository.AddRecordings(barbershopRecordings);
-            return View("Thanks", barbershopRecordings);
+            if (ModelState.IsValid) {
+                Repository.AddRecordings(barbershopRecordings);
+                return View("Thanks", barbershopRecordings);
+            }
+            else
+            {
+                return View();
+            }
         }
         
         public ViewResult ListRecordings()

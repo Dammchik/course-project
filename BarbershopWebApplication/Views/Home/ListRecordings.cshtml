@@ -6,29 +6,33 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <title>Recordings</title>
 </head>
 <body>
-    <h2>Here is t he list of people attending the barbershop</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (BarbershopWebApplication.Models.BarbershopRecordings r in Model)
-            {
+    <div class="panel-body">
+        <h2>Here is t he list of people attending the barbershop</h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
                 <tr>
-                    <td>@r.Name</td>
-                    <td>@r.Email</td>
-                    <td>@r.Phone</td>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (BarbershopWebApplication.Models.BarbershopRecordings r in Model)
+                {
+                    <tr>
+                        <td>@r.Name</td>
+                        <td>@r.Email</td>
+                        <td>@r.Phone</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
 </body>
 
 

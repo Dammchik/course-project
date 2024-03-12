@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UaNPNt2dalaLCYkDQzwJZNObkOlCGEt50MbQugEBgeA=",
+  "Hash": "I65seuaeVCHxo8IwvAEi+GGMbm48yIDWktyaVW0+i10=",
   "Source": "BarbershopWebApplication",
   "BasePath": "_content/BarbershopWebApplication",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\wwwroot\\css\\styles.css",
+      "SourceId": "BarbershopWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\wwwroot\\",
+      "BasePath": "_content/BarbershopWebApplication",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\wwwroot\\favicon.ico",
