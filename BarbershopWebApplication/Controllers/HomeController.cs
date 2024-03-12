@@ -1,6 +1,7 @@
 ﻿using System;
 using BarbershopWebApplication.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace BarbershopWebApplication.Controllers
 {
@@ -18,9 +19,14 @@ namespace BarbershopWebApplication.Controllers
             return View();
         }
         [HttpPost]
-        public ViewResult RsvpFormPost(BarbershopRecordings barbershopRecordings) { 
+        public ViewResult RsvpForm(BarbershopRecordings barbershopRecordings) { 
             Repository.AddRecordings(barbershopRecordings);
             return View("Thanks", barbershopRecordings);
+        }
+        
+        public ViewResult ListRecordings()
+        {
+            return View(Repository.Recordings.Where(r => r.WillAttend == true));
         }
     }
 }
