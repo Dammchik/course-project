@@ -5,14 +5,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+
+    </style>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>   
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
-</head>
-<body>
+</head> 
+<body class="bg-dark">
+   
     <div class="text-center">
-        <h4>@ViewBag.Greeting World</h4><br>
+        <h4 style="color: #0d6efd;">@ViewBag.Greeting, dear visitor</h4><br>
+
+        <a class="btn btn-primary" asp-action="AboutUs">О нас</a>
+
+        <a class="btn btn-primary" asp-action="Services">Услуги</a>
+
+        <a class="btn btn-primary" asp-action="Barbers">Барберы</a>
+
+        <a class="btn btn-primary" asp-action="Contacts">Контакты</a>
+
         <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a >
     </div>
 </body>
+
 </html> 

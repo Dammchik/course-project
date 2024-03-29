@@ -29,7 +29,30 @@ namespace BarbershopWebApplication.Controllers
                 return View();
             }
         }
-        
+        [HttpGet]
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Services()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Barbers()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Contacts()
+        {
+            return View();
+        }
+
         public ViewResult ListRecordings()
         {
             return View(Repository.Recordings.Where(r => r.WillAttend == true));

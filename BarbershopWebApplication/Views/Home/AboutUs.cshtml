@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Специальные предложения</title>
+    <style>
+        body {
+            margin: 0; /* Убираем отступы */
+            background-color: #343a40; /* Цвет фона - Bootstrap bg-dark */
+            color: #0d6efd; /* Синий цвет текста */
+            font-family: 'Arial', sans-serif; /* Шрифт Arial */
+            text-align: center; /* Выравнивание текста по центру */
+            text-transform: uppercase; /* Все буквы заглавные */
+            font-size: 36px; /* Унифицированный размер шрифта */
+            height: 100vh; /* Полная высота экрана */
+            display: flex; /* Используем flexbox для выравнивания содержимого */
+            flex-direction: column; /* Элементы выстроены в колонку */
+            justify-content: center; /* Центрирование по вертикали */
+            align-items: center; /* Центрирование по горизонтали */
+        }
+
+        .offer {
+            margin-bottom: 20px; /* Отступ снизу для предложений */
+        }
+
+        .line-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px; /* Отступ снизу для элементов со строчками */
+        }
+
+        .dash {
+            padding-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="offer">
+        Делаем скидку 50% на первое посещение и 20% на каждое пятое
+    </div>
+    <div class="offer">
+        Мы набираем только настоящих профессионалов своего дела, ведь 
+    </div>
+    <div>Ваш</div>
+    <div>Внешний</div>
+    <div>Вид</div>
+    <div class="line-item">
+        <span class="dash">—</span>
+        Это ваша визитная карточка
+    </div>
+    <div class="line-item">
+        <span class="dash">—</span>
+        Ваша индивидуальность
+    </div>
+    <div class="line-item">
+        <span class="dash">—</span>
+        Ваш успех
+    </div>
+</body>
+</html>
