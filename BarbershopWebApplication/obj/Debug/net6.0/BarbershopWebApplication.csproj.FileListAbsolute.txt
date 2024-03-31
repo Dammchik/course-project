@@ -36,3 +36,5 @@ C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebAp
 C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\bin\Debug\net6.0\Npgsql.dll
 C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.csproj.CopyComplete
+C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

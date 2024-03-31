@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "MoGLPI9UX+mbL/qzVp0QEWjqJTknY33qEgz4Hlabtwc4gnG9c8ILQyZYdgkUmJdq5O1ynjB6T2fiVkEYUfVV1g==",
+  "dgSpecHash": "IoyxSW6tg9hcOShG/+Zn595tcCdhqBC4yx0Jjtj46wwxmBYY21rDaPV/8x4SjCNtIL8fqmpkNHVjgE2p6OmuuA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Dammchik19\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",
+    "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.4\\microsoft.entityframeworkcore.design.6.0.4.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.4\\microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
+    "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.4\\microsoft.entityframeworkcore.tools.6.0.4.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
