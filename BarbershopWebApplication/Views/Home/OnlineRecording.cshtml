@@ -6,26 +6,26 @@
 <html> 
 <head> 
     <meta name="viewport" content="width=device-width" /> 
-    <title>RsvpForm</title> 
+    <title>Онлайн запись</title> 
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head> 
-<body> 
+<body > 
     <div class="panel panel-success"> 
-        <div class="panel-heading text-center"><h4>RSVP</h4></div> 
+        <div class="panel-heading text-center"><h4>Запись</h4></div> 
         <div class="panel-body"> 
-            <form class="p-a-1" asp-action="RsvpForm" method="post"> 
+            <form class="p-a-1" asp-action="OnlineRecording" method="post"> 
             <div asp-validation-summary="All"></div> 
             <div class="form-group"> 
-                <laЬel asp-for="Name">Your name:</laЬel> 
+                <laЬel asp-for="Name">Ваше имя:</laЬel> 
                 <input class="form-control" asp-for="Name" /> 
             </div> 
             <div class="form-group"> 
-                <laЬel asp-for="Email">Your email:</laЬel> 
+                <laЬel asp-for="Email">Ваш e-mail:</laЬel> 
                 <input class="form-control" asp-for="Email" /> 
             </div> 
             <div class="form-group"> 
-                <laЬel asp-for="Phone">Your phone:</laЬel> 
+                <laЬel asp-for="Phone">Ваш номер телефона:</laЬel> 
                 <input class="form-control" asp-for="Phone" /> 
             </div> 
             <div class="form-group"> 
@@ -38,7 +38,7 @@
             </div>
             <div class="text-center">
                 <button class="btn btn-primary" type="submit">
-                    SuЬmit RSVP
+                    Подтвердить
                 </button>
             </div>
             </form>

@@ -10,16 +10,16 @@ namespace BarbershopWebApplication.Controllers
         public ViewResult Index()
         {
             int hour = DateTime.Now.Hour;
-            ViewBag.Greeting = hour < 12 ? "Good Morning" : "Good Afternoon";
+            ViewBag.Greeting = hour < 12 ? "Доброе утро" : "Добрый день";
             return View("MyView");
         }
         [HttpGet]
-        public ViewResult RsvpForm()
+        public ViewResult OnlineRecording()
         {
             return View();
         }
         [HttpPost]
-        public ViewResult RsvpForm(BarbershopRecordings barbershopRecordings) { 
+        public ViewResult OnlineRecording(BarbershopRecordings barbershopRecordings) { 
             if (ModelState.IsValid) {
                 Repository.AddRecordings(barbershopRecordings);
                 return View("Thanks", barbershopRecordings);
