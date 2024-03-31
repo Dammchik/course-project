@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
+      "Id": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\wwwroot\\dockercompose\\docker-compose.yml",
+      "PackagePath": "staticwebassets\\dockercompose\\docker-compose.yml"
+    },
+    {
       "Id": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

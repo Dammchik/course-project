@@ -2,14 +2,12 @@
 services:
 
   service-db:
-    image: postgres:14.7-alpine
+    image: postgres
     environment:
-      POSTGRES_USER: dammchik
-      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: barbershopdb
     ports:
       - "15432:5432"
+    
     restart: unless-stopped
-
-volumes:
-  db-data:
-  pgadmin-data:
