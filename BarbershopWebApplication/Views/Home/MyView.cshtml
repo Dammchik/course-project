@@ -1,32 +1,36 @@
-﻿@{ 
-    Layout = null; 
+﻿@{
+    Layout = null;
 }
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <style>
-
-    </style>
-    <meta name="viewport" content="width=device-width" />
-    <title>DammchikBarbershop</title>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DammchikBarbershop</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
-</head> 
-<body class="bg-dark">
-   
+    <style>
+        /* Убедитесь, что нет внешних отступов у body и html, чтобы фон был равномерным */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Позволяет растянуть контент на всю высоту страницы */
+            min-height: 100vh; /* Минимальная высота на весь экран */
+        }
+        /* Добавьте дополнительные стили, если нужно */
+    </style>
+</head>
+<body class="bg-dark vh-100 d-flex flex-column justify-content-center align-items-center">
+
     <div class="text-center">
         <h4 style="color: #0d6efd;">@ViewBag.Greeting, уважаемый посетитель</h4><br>
 
-        <a class="btn btn-primary" asp-action="AboutUs">О нас</a>
-
-        <a class="btn btn-primary" asp-action="Services">Услуги</a>
-
-        <a class="btn btn-primary" asp-action="Barbers">Барберы</a>
-
-        <a class="btn btn-primary" asp-action="Contacts">Контакты</a>
-
-        <a class="btn btn-primary" asp-action="OnlineRecording">Онлайн-запись</a >
+        <a class="btn btn-primary my-2" asp-action="AboutUs">О нас</a>
+        <a class="btn btn-primary my-2" asp-action="Services">Услуги</a>
+        @*<a class="btn btn-primary my-2" asp-action="Barbers">Барберы</a>*@
+        <a class="btn btn-primary my-2" asp-action="Contacts">Контакты</a>
+        <a class="btn btn-primary my-2" asp-action="OnlineRecording">Онлайн-запись</a>
     </div>
 </body>
 
-</html> 
+</html>

@@ -3,6 +3,7 @@ using System;
 using BarbershopWebApplication.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BarbershopWebApplication.Migrations
 {
     [DbContext(typeof(BarbershopContext))]
-    partial class BarbershopContextModelSnapshot : ModelSnapshot
+    [Migration("20240331223259_AddBarberAndService")]
+    partial class AddBarberAndService
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,28 +38,6 @@ namespace BarbershopWebApplication.Migrations
                     b.HasKey("BarberId");
 
                     b.ToTable("Barbers");
-
-                    b.HasData(
-                        new
-                        {
-                            BarberId = 1,
-                            Name = "Иван"
-                        },
-                        new
-                        {
-                            BarberId = 2,
-                            Name = "Пётр"
-                        },
-                        new
-                        {
-                            BarberId = 3,
-                            Name = "Антон"
-                        },
-                        new
-                        {
-                            BarberId = 4,
-                            Name = "Сергей"
-                        });
                 });
 
             modelBuilder.Entity("BarbershopWebApplication.Models.Recording", b =>
@@ -89,6 +69,10 @@ namespace BarbershopWebApplication.Migrations
                     b.Property<DateTime>("Time")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<bool?>("WillAttend")
+                        .IsRequired()
+                        .HasColumnType("boolean");
+
                     b.HasKey("RecordingId");
 
                     b.HasIndex("BarberId");
@@ -115,32 +99,6 @@ namespace BarbershopWebApplication.Migrations
                     b.HasKey("ServiceId");
 
                     b.ToTable("Services");
-
-                    b.HasData(
-                        new
-                        {
-                            ServiceId = 1,
-                            Price = 800m,
-                            Title = "Стрижка машинкой"
-                        },
-                        new
-                        {
-                            ServiceId = 2,
-                            Price = 1500m,
-                            Title = "Детская стрижка"
-                        },
-                        new
-                        {
-                            ServiceId = 3,
-                            Price = 1600m,
-                            Title = "Стрижка машинкой Fade"
-                        },
-                        new
-                        {
-                            ServiceId = 4,
-                            Price = 2100m,
-                            Title = "Мужская стрижка"
-                        });
                 });
 
             modelBuilder.Entity("BarbershopWebApplication.Models.Recording", b =>

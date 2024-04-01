@@ -2,11 +2,20 @@
 using BarbershopWebApplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BarbershopWebApplication.Controllers
 {
     public class HomeController : Controller
     {
+        private BarbershopContext _context;
+
+        public HomeController(BarbershopContext context)
+        {
+            _context = context;
+        }
+
         public ViewResult Index()
         {
             int hour = DateTime.Now.Hour;
@@ -16,17 +25,39 @@ namespace BarbershopWebApplication.Controllers
         [HttpGet]
         public ViewResult OnlineRecording()
         {
-            return View();
+            ViewBag.Barbers = new SelectList(_context.Barbers, "BarberId", "Name");
+            ViewBag.Services = _context.Services.Select(s => new SelectListItem
+            {
+                Value = s.ServiceId.ToString(),
+                Text = $"{s.Title} - {s.Price} руб"
+            }).ToList();
+
+            return View(new Recording()); // Возвращаем новую модель для формы
         }
         [HttpPost]
-        public ViewResult OnlineRecording(BarbershopRecordings barbershopRecordings) { 
+        public ViewResult OnlineRecording(Recording barbershopRecording) { 
             if (ModelState.IsValid) {
-                Repository.AddRecordings(barbershopRecordings);
-                return View("Thanks", barbershopRecordings);
+                barbershopRecording.Barber = _context.Barbers.FirstOrDefault(b => b.BarberId == barbershopRecording.BarberId);
+                barbershopRecording.Service = _context.Services.FirstOrDefault(s => s.ServiceId == barbershopRecording.ServiceId);
+                barbershopRecording.Time = DateTime.SpecifyKind(barbershopRecording.Time, DateTimeKind.Utc);
+
+                _context.Recordings.Add(barbershopRecording);
+                _context.SaveChanges();
+
+                ViewBag.ServicePrice = barbershopRecording.Service?.Price;
+
+                return View("Thanks", barbershopRecording);
             }
             else
             {
-                return View();
+                ViewBag.Barbers = new SelectList(_context.Barbers, "BarberId", "Name");
+                ViewBag.Services = _context.Services.Select(s => new SelectListItem
+                {
+                    Value = s.ServiceId.ToString(),
+                    Text = $"{s.Title} - {s.Price} руб"
+                }).ToList();
+
+                return View(barbershopRecording);
             }
         }
         [HttpGet]
@@ -41,11 +72,11 @@ namespace BarbershopWebApplication.Controllers
             return View();
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public ViewResult Barbers()
         {
             return View();
-        }
+        }*/
 
         [HttpGet]
         public ViewResult Contacts()

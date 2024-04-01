@@ -1,48 +1,112 @@
-﻿@model BarbershopWebApplication.Models.BarbershopRecordings 
-@{ 
-    Layout = null; 
+﻿@model BarbershopWebApplication.Models.Recording
+@{
+    Layout = null;
 }
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <meta name="viewport" content="width=device-width" /> 
-    <title>Онлайн запись</title> 
-    <link rel="stylesheet" href="/css/styles.css" />
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн запись</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
-</head> 
-<body > 
-    <div class="panel panel-success"> 
-        <div class="panel-heading text-center"><h4>Запись</h4></div> 
-        <div class="panel-body"> 
-            <form class="p-a-1" asp-action="OnlineRecording" method="post"> 
-            <div asp-validation-summary="All"></div> 
-            <div class="form-group"> 
-                <laЬel asp-for="Name">Ваше имя:</laЬel> 
-                <input class="form-control" asp-for="Name" /> 
-            </div> 
-            <div class="form-group"> 
-                <laЬel asp-for="Email">Ваш e-mail:</laЬel> 
-                <input class="form-control" asp-for="Email" /> 
-            </div> 
-            <div class="form-group"> 
-                <laЬel asp-for="Phone">Ваш номер телефона:</laЬel> 
-                <input class="form-control" asp-for="Phone" /> 
-            </div> 
-            <div class="form-group"> 
-                <laЬel>Will you attend?</laЬel> 
-                <select class="form-control" asp-for="WillAttend">
-                    <option value="">Choose an option</option>
-                    <option value="true">Yes, I'll Ье there</option>
-                    <option value="falsr">No, I can't come</option>
-                </select>
+    <style>
+        body {
+            background-color: #343a40; /* Bootstrap bg-dark */
+            color: #0d6efd; /* Цвет шрифта */
+        }
+
+        .panel-success {
+            border-color: #0d6efd;
+        }
+
+        .panel-heading {
+            background-color: #343a40;
+            border-color: #0d6efd;
+        }
+
+        .panel-body {
+            background-color: #343a40;
+        }
+
+        label, .btn-primary {
+            color: #0d6efd;
+        }
+
+        .form-control {
+            background-color: #343a40;
+            color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+        .form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            color: #ffffff; /* Белый цвет текста для кнопки */
+        }
+
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+            color: #ffffff; /* Белый цвет текста при наведении на кнопку */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="panel panel-success">
+            <div class="panel-heading text-center"><h4>Запись</h4></div>
+            <div class="panel-body">
+                <form asp-action="OnlineRecording" method="post">
+                    <div asp-validation-summary="All"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Name">Ваше имя:</label>
+                        <input asp-for="Name" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email">Ваш e-mail:</label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Phone">Ваш номер телефона:</label>
+                        <input asp-for="Phone" class="form-control" />
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label asp-for="BarberId">Барбер:</label>
+                        <select asp-for="BarberId" class="form-control" asp-items="@ViewBag.Barbers">
+                            <option value="">Выберите барбера</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ServiceId">Услуга:</label>
+                        <select asp-for="ServiceId" class="form-control" asp-items="@ViewBag.Services">
+                            <option value="">Выберите услугу</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Time">Выберите время:</label>
+                        <input asp-for="Time" type="datetime-local" class="form-control" />
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Подтвердить</button>
+                    </div>
+                </form>
             </div>
-            <div class="text-center">
-                <button class="btn btn-primary" type="submit">
-                    Подтвердить
-                </button>
-            </div>
-            </form>
         </div>
     </div>
-</body> 
-</html> 
+</body>
+</html>

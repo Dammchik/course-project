@@ -4,7 +4,7 @@ namespace BarbershopWebApplication.Models
 {
     public class BarbershopRecordings
     {
-        [Required (ErrorMessage = "Please enter your name")]
+        [Required (ErrorMessage = "Пожалуйста введите своё имя")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Please enter email address")]
         [RegularExpression(".+\\@.+\\..+",

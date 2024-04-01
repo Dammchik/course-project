@@ -2,10 +2,10 @@
 {
     public class Repository
     {
-        private static List<BarbershopRecordings> _records = new List<BarbershopRecordings>();
-        public static IEnumerable<BarbershopRecordings> Recordings { get { return _records; } }
+        private static List<Recording> _records = new List<Recording>();
+        public static IEnumerable<Recording> Recordings { get { return _records; } }
         
-        public static void AddRecordings(BarbershopRecordings recordings)
+        public static void AddRecordings(Recording recordings)
         {
             _records.Add(recordings);   
         }

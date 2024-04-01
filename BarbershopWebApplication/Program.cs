@@ -1,3 +1,6 @@
+using BarbershopWebApplication.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace BarbershopWebApplication
 {
     public class Program
@@ -6,12 +9,16 @@ namespace BarbershopWebApplication
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Добавление контекста базы данных как сервиса
+            builder.Services.AddDbContext<BarbershopContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("BarbershopDatabase")));
+
+            // Добавление контроллеров и представлений
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            // Конфигурация пайплайна HTTP-запросов.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");

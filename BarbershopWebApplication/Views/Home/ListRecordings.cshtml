@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BarbershopWebApplication.Models.BarbershopRecordings>
+﻿@model IEnumerable<BarbershopWebApplication.Models.Recording>
 @{
     Layout = null;
 }
@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (BarbershopWebApplication.Models.BarbershopRecordings r in Model)
+                @foreach (BarbershopWebApplication.Models.Recording r in Model)
                 {
                     <tr>
                         <td>@r.Name</td>
