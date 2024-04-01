@@ -52,10 +52,5 @@ namespace BarbershopWebApplication.Controllers
         {
             return View();
         }
-
-        public ViewResult ListRecordings()
-        {
-            return View(Repository.Recordings.Where(r => r.WillAttend == true));
-        }
     }
 }
