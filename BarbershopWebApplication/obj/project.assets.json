@@ -817,11 +817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\Dammchik19\\Source\\Repos\\course-project\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
       "projectName": "BarbershopWebApplication",
-      "projectPath": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
+      "projectPath": "C:\\Users\\Dammchik19\\Source\\Repos\\course-project\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
       "packagesPath": "C:\\Users\\Dammchik19\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\obj\\",
+      "outputPath": "C:\\Users\\Dammchik19\\Source\\Repos\\course-project\\BarbershopWebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

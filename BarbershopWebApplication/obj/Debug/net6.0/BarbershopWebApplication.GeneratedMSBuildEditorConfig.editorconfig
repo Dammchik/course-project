@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BarbershopWebApplication
 build_property.RootNamespace = BarbershopWebApplication
-build_property.ProjectDir = C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\
+build_property.ProjectDir = C:\Users\Dammchik19\source\repos\course-project\BarbershopWebApplication\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication
+build_property.MSBuildProjectDirectory = C:\Users\Dammchik19\source\repos\course-project\BarbershopWebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/AboutUs.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/Barbers.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/Barbers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYXJiZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/Contacts.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/Index.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/ListRecordings.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/ListRecordings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0UmVjb3JkaW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/MyView.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/MyView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/OnlineRecording.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/OnlineRecording.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbmxpbmVSZWNvcmRpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/Privacy.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/Services.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Home/Thanks.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Home/Thanks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaGFua3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Shared/Error.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/_ViewImports.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/_ViewStart.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dammchik19/Desktop/vs projects/BarbershopWebApplication/BarbershopWebApplication/Views/Shared/_Layout.cshtml]
+[C:/Users/Dammchik19/source/repos/course-project/BarbershopWebApplication/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pjo87hpvzb

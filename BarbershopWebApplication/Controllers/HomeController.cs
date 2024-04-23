@@ -23,43 +23,91 @@ namespace BarbershopWebApplication.Controllers
             return View("MyView");
         }
         [HttpGet]
-        public ViewResult OnlineRecording()
+        public ViewResult OnlineRecording(int? id)
         {
+            if (id.HasValue)
+            {
+                var recording = _context.Recordings.Include(r => r.Barber).Include(r => r.Service)
+                                                  .FirstOrDefault(r => r.RecordingId == id.Value);
+                if (recording != null)
+                {
+                    ViewBag.Barbers = new SelectList(_context.Barbers, "BarberId", "Name", recording.BarberId);
+                    ViewBag.Services = _context.Services.Select(s => new SelectListItem
+                    {
+                        Value = s.ServiceId.ToString(),
+                        Text = $"{s.Title} - {s.Price} руб"
+                    }).ToList();
+                    return View(recording);
+                }
+            }
+
             ViewBag.Barbers = new SelectList(_context.Barbers, "BarberId", "Name");
             ViewBag.Services = _context.Services.Select(s => new SelectListItem
             {
                 Value = s.ServiceId.ToString(),
                 Text = $"{s.Title} - {s.Price} руб"
             }).ToList();
-
-            return View(new Recording()); // Возвращаем новую модель для формы
+            return View(new Recording());
         }
+
         [HttpPost]
-        public ViewResult OnlineRecording(Recording barbershopRecording) { 
-            if (ModelState.IsValid) {
-                barbershopRecording.Barber = _context.Barbers.FirstOrDefault(b => b.BarberId == barbershopRecording.BarberId);
-                barbershopRecording.Service = _context.Services.FirstOrDefault(s => s.ServiceId == barbershopRecording.ServiceId);
-                barbershopRecording.Time = DateTime.SpecifyKind(barbershopRecording.Time, DateTimeKind.Utc);
-
-                _context.Recordings.Add(barbershopRecording);
-                _context.SaveChanges();
-
-                ViewBag.ServicePrice = barbershopRecording.Service?.Price;
-
-                return View("Thanks", barbershopRecording);
-            }
-            else
+        public IActionResult OnlineRecording(Recording recording)
+        {
+            if (ModelState.IsValid)
             {
-                ViewBag.Barbers = new SelectList(_context.Barbers, "BarberId", "Name");
-                ViewBag.Services = _context.Services.Select(s => new SelectListItem
-                {
-                    Value = s.ServiceId.ToString(),
-                    Text = $"{s.Title} - {s.Price} руб"
-                }).ToList();
+                // Сначала преобразуем время из формы в UTC
+                recording.Time = DateTime.SpecifyKind(recording.Time, DateTimeKind.Utc);
 
-                return View(barbershopRecording);
+                if (recording.RecordingId == 0)
+                {
+                    // Добавление новой записи
+                    _context.Recordings.Add(recording);
+                }
+                else
+                {
+                    // Обновление существующей записи
+                    var existingRecording = _context.Recordings.Find(recording.RecordingId);
+                    if (existingRecording != null)
+                    {
+                        // Копирование значений из recording в existingRecording, кроме ID
+                        existingRecording.Name = recording.Name;
+                        existingRecording.Email = recording.Email;
+                        existingRecording.Phone = recording.Phone;
+                        existingRecording.BarberId = recording.BarberId;
+                        existingRecording.ServiceId = recording.ServiceId;
+                        existingRecording.Time = recording.Time; // Время уже преобразовано в UTC выше
+                                                                 // Остальные поля по необходимости
+                    }
+                }
+
+                _context.SaveChanges();
+                return RedirectToAction("Thanks", new { id = recording.RecordingId });
             }
+
+            // Если форма не валидна, показать её снова
+            ViewBag.Barbers = new SelectList(_context.Barbers, "BarberId", "Name", recording.BarberId);
+            ViewBag.Services = new SelectList(_context.Services.Select(s => new SelectListItem
+            {
+                Value = s.ServiceId.ToString(),
+                Text = $"{s.Title} - {s.Price} руб"
+            }), "Value", "Text", recording.ServiceId);
+
+            return View(recording);
         }
+
+        public IActionResult Thanks(int id)
+        {
+            var recording = _context.Recordings.Include(r => r.Barber).Include(r => r.Service)
+                                              .FirstOrDefault(r => r.RecordingId == id);
+            if (recording == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewBag.ServicePrice = recording.Service?.Price;
+            return View(recording);
+        }   
+
         [HttpGet]
         public ViewResult AboutUs()
         {

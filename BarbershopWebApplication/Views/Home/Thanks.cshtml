@@ -24,5 +24,6 @@
     <p>Услуга: @Model.Service.Title</p>
     <p>Стоимость услуги: @ViewBag.ServicePrice руб</p>
     <p>Дата и время: @Model.Time.ToString("f")</p>
+    <a href="@Url.Action("OnlineRecording", new { id = Model.RecordingId })" class="btn btn-primary">Изменить</a>
 </body>
 </html>

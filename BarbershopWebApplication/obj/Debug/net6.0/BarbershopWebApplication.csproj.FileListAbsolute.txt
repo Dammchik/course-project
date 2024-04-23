@@ -38,3 +38,43 @@ C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebAp
 C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.csproj.CopyComplete
 C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Dammchik19\Desktop\vs projects\BarbershopWebApplication\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\appsettings.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\BarbershopWebApplication.staticwebassets.runtime.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\BarbershopWebApplication.exe
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\BarbershopWebApplication.deps.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\BarbershopWebApplication.runtimeconfig.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\BarbershopWebApplication.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\BarbershopWebApplication.pdb
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.csproj.AssemblyReference.cache
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.AssemblyInfoInputs.cache
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.AssemblyInfo.cs
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.csproj.CoreCompileInputs.cache
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.RazorAssemblyInfo.cache
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.RazorAssemblyInfo.cs
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets\msbuild.BarbershopWebApplication.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets\msbuild.build.BarbershopWebApplication.props
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.BarbershopWebApplication.props
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.BarbershopWebApplication.props
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\scopedcss\bundle\BarbershopWebApplication.styles.css
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\scopedcss\projectbundle\BarbershopWebApplication.bundle.scp.css
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.csproj.CopyComplete
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\refint\BarbershopWebApplication.dll
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.pdb
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\BarbershopWebApplication.genruntimeconfig.cache
+C:\Users\Dammchik19\Source\Repos\course-project\BarbershopWebApplication\obj\Debug\net6.0\ref\BarbershopWebApplication.dll

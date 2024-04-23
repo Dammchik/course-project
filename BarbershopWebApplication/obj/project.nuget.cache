@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IoyxSW6tg9hcOShG/+Zn595tcCdhqBC4yx0Jjtj46wwxmBYY21rDaPV/8x4SjCNtIL8fqmpkNHVjgE2p6OmuuA==",
+  "dgSpecHash": "53qn0kL2qmhiTOdit8IKE3SWthh1eCA+oEgkKesKuVZtKMItmlUlZID3y4A2wt3b4HQ/MqxCwptJlx2DSMQblw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dammchik19\\Desktop\\vs projects\\BarbershopWebApplication\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
+  "projectFilePath": "C:\\Users\\Dammchik19\\source\\repos\\course-project\\BarbershopWebApplication\\BarbershopWebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dammchik19\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dammchik19\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
