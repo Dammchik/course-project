@@ -19,8 +19,10 @@ namespace BarbershopWebApplication.Models
         [Required(ErrorMessage = "Пожалуйста введите свой e-mail")]
         [RegularExpression(".+\\@.+\\..+",
             ErrorMessage = "Пожалуйста введите корректный email")]
-        public string Email { get; set; }
+        public string Email { get; set; }  
         [Required(ErrorMessage = "Пожалуйста введите свой номер телефона")]
+        //[RegularExpression("^((\\+7|7|8)+([0 - 9]){10})$",
+        //    ErrorMessage = "Пожалуйста введите корректный номер")]
         public string Phone { get; set; }
         
     }
